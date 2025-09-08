@@ -8,10 +8,10 @@ more support on the API for CLN as a backend bitcoin node.
 Targets of this project are:
 
 - Minimize H/W requirement for running CLN
-- Add functionality to utreexo (support for APIs like [gettxout]/[scantxoutset])
+- Add functionality to utreexo (support for APIs like 'gettxout'/'scantxoutset')
 - Add functionality to adjust mempool policy
 
-To acheive it, there will be an additional requirement: [sqlite3]
+To acheive it, there will be an additional requirement: 'sqlite3'
 - Narrow the target area by tracking specific txs (funding/channel opening/closure/etc)
 
 Just to remind:
