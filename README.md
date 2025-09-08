@@ -1,3 +1,25 @@
+utreexod-cln
+====
+utreexod-cln is a softfork of utreexod to add a support for CLN (core lightning).
+Currently, there is no available light backend for CLN except pruned bitcoin node whereas there is a neutrino
+on LND side. Neutrino can be a good option for CLN backend, but utreexo has better functionality and provide
+more support on the API for CLN as a backend bitcoin node.
+
+Targets of this project are:
+
+- Minimize H/W requirement for running CLN
+- Add functionality to utreexo (support for APIs like [gettxout]/[scantxoutset])
+- Add functionality to adjust mempool policy
+
+To acheive it, there will be an additional requirement: [sqlite3]
+- Narrow the target area by tracking specific txs (funding/channel opening/closure/etc)
+
+Just to remind:
+- This is not a subsitute for fully functioning Bitcoin node, but only focusing on support of CLN as a backend node.
+- Target users are small to mid scale lightning node operators. For heavy operation, RockDB is recommended.
+- This is just a personal experimental project.
+
+
 utreexod
 ====
 
